@@ -1,0 +1,35 @@
+You are given a binary string s of size n containing only 0s and 1s. 
+A substring of size k is called good if the count of all 1s in this substring is not greater than m.
+
+You are required to transform a string in such a manner that every substring of size k are good by performing some operations. 
+In one operation, you can change the value of a character in a string from 1 to 0.
+
+Determine the minimum number of operations that are required such that every substring of size k in the given string is good.
+
+Input format
+
+First line: Three space-separated integers n, k, and m
+Second line: Binary string s of size n
+Output format
+
+First line: Print a single integer that denotes the minimum number of operations that are required.
+Second line: Print the strings that are transformed after applying the operations. 
+If there are multiple such strings, then you can print any of them.
+
+
+Explanation
+The minimum operations required is 2.
+
+Operations: convert s[2] to 0 then convert s[8] to 0.
+Now the string becomes 110000110011 where all substrings of size 4 are good.
+
+The string 101000110011 also may be the answer because here also all the substrings of size 4 are good.
+Operations: convert s[1] to 0 then convert s[8] to 0.
+
+test
+8, 4, 2
+11111111
+
+Ans 
+4
+00110011
