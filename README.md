@@ -1,2 +1,2 @@
 # Coding-Challenges-Hackathons
-> Challenges makes me better.
+> A great day starts with a challenge to solve.
