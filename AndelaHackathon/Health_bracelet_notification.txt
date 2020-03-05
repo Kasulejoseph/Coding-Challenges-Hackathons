@@ -1,0 +1,34 @@
+A health bracelet has a formula for alerting the user about their workout progress. If the number of miles ran is 2x the median distance for a trailing number of days, they send the user a notification about their progress. No notifications are generated before a given number of days data is collected.
+
+Given the number of trailing days d and the user’s workout for a period of n days, find and print the number of times the user will receive a notification over all n days.
+
+For example, d=3 and distances=[1,2,3,4,5]. On the first three days, they just collect workout data. On day 4, we have trailing distances of [1,2,3]. The median is 2 and the day's distance covered is 4. Because 4 ≥ 2 x 2, there will be a notification. The next day, our trailing distances are [2,3,4] and the distance covered is 5 . This is less than 2 x 3 so no notification will be sent. Over the period, there was one notification.
+
+Complete the function activityAlerts in the editor below. It must return an integer representing the number of client notifications.
+
+Input Format
+
+The first line contains two space-separated integers n and d, the number of days of transaction data, and the number of trailing days' data used to calculate median spending. The second line contains n space-separated non-negative integers where each integer i denotes distances[i].
+
+Constraints
+
+1 ≤ n ≤ 2 x 105
+1 ≤ d ≤ n
+0 ≤ expenditures[i] ≤ 200
+Output Format
+
+Print an integer denoting the total number of notifications received in n days.
+
+Sample Input 0
+
+6 4
+1 2 3 4 5 6
+Sample Output 0
+
+1
+Explanation 0
+
+There are 4 days of data required so the first day a notification might go out is day 5. Our trailing data is [1,2,3,4] with a median of 2.5. The user runs for 5 miles and since 5≥2x2.5 a notification is generated. On day 6, our trailing data is [2,3,4,5] with a median of 3.5 and the user covers 6 miles. Since 6<2x3.5, no notification is sent. Therefore only 1 notification is sent during the time period.
+
+
+Link -> https://www.hackerrank.com/contests/crack-the-code-challenge/challenges/health-bracelet-notification/problem
