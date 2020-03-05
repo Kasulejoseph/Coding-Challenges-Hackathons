@@ -1,0 +1,28 @@
+Suppose there’s a perfectly circular bypass road around the city. Along the bypass are N fuel stations numbered 0 to N-1 (both inclusive). You have two pieces of information corresponding to each of the fuel stations: 1. The amount of fuel that particular stations will give, and 2. The distance from that fuel station to the next. Initially, you have an empty tank of infinite capacity. You can start the drive at any of the stations. Calculate the first point from where the car will be able to complete the circle. Consider that the car will stop at each of the stations. The car will move one kilometer for each litre of fuel.
+
+Input Format
+
+The first line will contain the value of N.
+The next N lines will contain a pair of integers each, i.e. the amount of fuel that station will give and the distance between that station and the next.
+Constraints
+
+1 ≤ N ≤ 105
+1 ≤ amount of fuel, distance ≤ 105
+Output Format
+
+An integer which will be the smallest index of the fuel station from which we can start the drive.
+
+Sample Input 0
+
+3
+1 5
+10 3
+3 4
+Sample Output 0
+
+1
+Explanation 0
+
+We can start the drive from the second station.
+
+Link -> https://www.hackerrank.com/contests/crack-the-code-challenge/challenges/bypass-drive-circuit/problem
