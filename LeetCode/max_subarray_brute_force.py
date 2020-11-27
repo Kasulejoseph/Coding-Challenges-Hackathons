@@ -1,5 +1,5 @@
 class Solution:
-    def maxSubArray(self, nums: list()) -> int:
+    def maxSubArray(self, nums: List[int]) -> int:
         max_array = [0]
         array_1 = []
         if len(nums) == 1:
@@ -11,14 +11,6 @@ class Solution:
                 array_1.append(sub_sum)
                 if max_array[0] == 0 and k == 0:
                     max_array[0] = sub_list[0]
-
-
                 if array_1[len(array_1) - 1] > sum(max_array):
-                    print(array_1, "====>", max_array)
                     max_array[0] = array_1[-1]
-                    print(array_1, "<<<<<<<<<<====>", max_array[0])
-        print("tyuytyuyt", max_array)
         return max_array[0]
-
-
-print(Solution().maxSubArray([-1,0,-2]))
